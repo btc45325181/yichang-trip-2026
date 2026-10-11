@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>方略肖邦直捣三峡坝 · 长沙→宜昌3天2晚自驾</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",system-ui,sans-serif;
+    background:#eef2f6;color:#1c2b36;line-height:1.75;font-size:15px;
+    padding:20px 10px;display:flex;justify-content:center}
+  .wrap{width:100%;max-width:880px}
+  header{background:linear-gradient(135deg,#0b6ea8 0%,#0d8bbf 55%,#12a3a8 100%);
+    color:#fff;border-radius:16px;padding:26px 26px;box-shadow:0 8px 24px rgba(11,110,168,.25)}
+  header h1{font-size:29px;letter-spacing:1px;margin-bottom:8px;text-shadow:0 2px 8px rgba(0,0,0,.15)}
+  header .sub{font-size:14.5px;opacity:.95}
+  .badges{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .badge{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);
+    border-radius:999px;padding:4px 13px;font-size:13px}
+  section{background:#fff;border-radius:14px;padding:20px 22px;margin-top:15px;
+    box-shadow:0 2px 10px rgba(16,42,67,.07)}
+  h2{font-size:20px;color:#0b6ea8;padding-left:12px;border-left:5px solid #e8590c;
+    margin-bottom:14px;line-height:1.3}
+  h3{font-size:15.5px;color:#12455f;margin:16px 0 8px}
+  h3:first-child{margin-top:0}
+  ul{margin:6px 0 6px 20px} li{margin-bottom:5px}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  @media(max-width:700px){.cards{grid-template-columns:1fr 1fr}}
+  .card{background:#f6fafd;border:1px solid #e2ecf3;border-radius:10px;padding:12px 13px}
+  .card b{display:block;color:#0b6ea8;font-size:12.5px;margin-bottom:5px;letter-spacing:.5px}
+  .card span{font-size:13.5px;line-height:1.65;color:#274156}
+  .urgent{background:#fff5f0;border:2px solid #e8590c;border-radius:14px;padding:18px 22px;
+    margin-top:15px;box-shadow:0 3px 12px rgba(232,89,12,.14)}
+  .urgent h2{color:#c2410c;border-left-color:#c2410c;margin-bottom:12px}
+  .urgent ol{margin:0 0 0 20px}
+  .urgent li{margin-bottom:13px}
+  .urgent .tit{color:#9a3412;font-size:15.5px}
+  .daybox{border:2px solid #0b6ea8;border-radius:14px;margin-top:18px;overflow:hidden;
+    box-shadow:0 3px 14px rgba(11,110,168,.13)}
+  .dayhead{background:linear-gradient(90deg,#0b6ea8,#12a3a8);color:#fff;padding:13px 20px;
+    font-size:18px;font-weight:700;display:flex;justify-content:space-between;
+    align-items:center;flex-wrap:wrap;gap:8px}
+  .dayhead .wx{font-size:13px;font-weight:400;background:rgba(255,255,255,.22);
+    padding:3px 11px;border-radius:999px}
+  .daybody{background:#fff;padding:18px 20px}
+  .daybody>h3{color:#0b6ea8;border-bottom:1px dashed #cfe2ee;padding-bottom:6px;margin-top:20px}
+  .tl{margin:10px 0 0 6px;border-left:2px dashed #b9d5e5;padding-left:18px}
+  .tl li{list-style:none;position:relative;margin-bottom:10px}
+  .tl li::before{content:"";position:absolute;left:-24px;top:8px;width:9px;height:9px;
+    border-radius:50%;background:#12a3a8;border:2px solid #fff;box-shadow:0 0 0 2px #b9d5e5}
+  .t{display:inline-block;min-width:88px;font-weight:700;color:#0b6ea8;font-variant-numeric:tabular-nums}
+  .gal{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:12px 0}
+  .gal.three{grid-template-columns:repeat(3,1fr)}
+  .gal figure{margin:0}
+  .gal img{width:100%;height:200px;object-fit:cover;border-radius:10px;display:block;
+    border:1px solid #dbe6ef;filter:saturate(1.16) contrast(1.06) brightness(1.04)}
+  .gal.three img{height:148px}
+  .gal figcaption{font-size:12.5px;color:#64748b;margin-top:5px;text-align:center;line-height:1.5}
+  @media(max-width:700px){.gal{grid-template-columns:1fr}.gal.three{grid-template-columns:1fr}
+    .gal img,.gal.three img{height:185px}}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+  @media(max-width:700px){.two{grid-template-columns:1fr}}
+  .box{border:1px solid #dbe6ef;border-radius:10px;padding:13px 15px;background:#fafcfe}
+  .box h4{font-size:14.5px;color:#0b4a6f;margin-bottom:7px}
+  .box ul{margin-left:18px;font-size:14px}
+  .note{background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;padding:11px 15px;margin:11px 0;font-size:14px}
+  .warn{background:#fff7ed;border-left:4px solid #f59e0b;border-radius:8px;padding:11px 15px;margin:11px 0;font-size:14px}
+  .no{background:#fef2f2;border-left:4px solid #dc2626;border-radius:8px;padding:11px 15px;margin:11px 0;font-size:14px}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:9px 0}
+  th{background:#e8f2f9;color:#0b4a6f;text-align:left;padding:9px 10px;font-weight:700;
+    border-bottom:2px solid #cfe2ee}
+  td{padding:9px 10px;border-bottom:1px solid #eef2f6;vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .tot td{background:#f8fbfd;font-weight:700}
+  footer{text-align:center;color:#7e93a3;font-size:12.5px;padding:20px 0 6px;line-height:1.9}
+  /* 窄屏（手机）：表格与长号码不横向溢出 */
+  @media(max-width:700px){
+    table{font-size:13px}
+    th,td{padding:8px 6px}
+    .num{white-space:normal;word-break:break-word}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>方略肖邦直捣三峡坝</h1>
+  <div class="sub">长沙 ⇄ 宜昌 · 两男两女 · 3天2晚自驾 · 油门到底，不看不归</div>
+  <div class="badges">
+    <span class="badge">🌍 电脑不关机，全球可看</span>
+    <span class="badge">10/12 周一早出发</span>
+    <span class="badge">10/14 周三晚到家</span>
+    <span class="badge">单程 460 km</span>
+    <span class="badge">人均约 1265 元</span>
+    <span class="badge">17~29℃ 晴到多云</span>
+  </div>
+</header>
+
+<!-- ================= ① 概览 ================= -->
+<section>
+  <h2>① 概览（只看这一屏就够）</h2>
+  <div class="cards">
+    <div class="card"><b>什么时候走</b><span>10/12 周一 06:30 出发<br>10/14 周三 14:00 返程<br>当晚 20–21 点到家</span></div>
+    <div class="card"><b>去哪几个地方</b><span>必去：三峡大坝、G348三峡公路、三峡人家<br>加游：三峡大瀑布</span></div>
+    <div class="card"><b>花多少钱</b><span>4 人合计约 <b>5050 元</b><br>人均约 <b>1265 元</b><br>（油费/过路/住/吃/门票）</span></div>
+    <div class="card"><b>天气</b><span>10/12 晴 27/19℃<br>10/13 晴 29/17℃<br>10/14 多云转阴 22/18℃</span></div>
+  </div>
+  <h3>五个地方长什么样</h3>
+  <div class="gal three">
+    <figure><img src="images/dam-main.jpg" alt="三峡大坝"><figcaption>三峡大坝<br>必去 · Day2</figcaption></figure>
+    <figure><img src="images/xiling-a.jpg" alt="G348西陵峡"><figcaption>G348 三峡公路<br>必去 · Day1</figcaption></figure>
+    <figure><img src="images/sanxia-1.jpg" alt="三峡人家"><figcaption>三峡人家<br>必去 · Day3</figcaption></figure>
+    <figure><img src="images/waterfall-2.jpg" alt="三峡大瀑布"><figcaption>三峡大瀑布<br>加游 · Day2下午</figcaption></figure>
+    <figure><img src="images/g348-2.jpg" alt="西陵峡游船"><figcaption>西陵峡游船视角<br>（顺带看看）</figcaption></figure>
+  </div>
+  <div class="note">🤸 <b>想蹦极的看这里：</b>宜昌能蹦极的就一处——<b>西陵峡快乐谷「三峡蹦极」，61 米高台，全国峡谷里最高</b>，而且<b>正好在 Day1 的 G348 起点三游洞旁边</b>，完全不绕路。详见 Day 1。</div>
+</section>
+
+<!-- ================= ② 必办 ================= -->
+<div class="urgent">
+  <h2>② 出发前（今晚 10/11）必办 3 件事</h2>
+  <ol>
+    <li><b class="tit">约三峡大坝 → 10/13 周二上午场（07:30–12:00）</b><br>
+      微信搜 <b>服务号「三峡大坝旅游」</b>，4 人各自实名填 <b>姓名 + 身份证号 + 手机号</b>，<b>预付交通费 35 元/人</b>（门票免费）。
+      可提前 1–7 天约，今晚就能约；每天限 3.2 万人，约满即止。进园凭<b>身份证原件</b>。</li>
+    <li><b class="tit">办车辆进坝区通行证</b><br>
+      微信小程序 <b>「三峡坝区车辆通行预约系统」</b>，上传行驶证免费办，<b>进坝区日期同样选 10/13</b>（和大坝门票同一天），<b>但必须提前 24 小时 → 今晚办最稳</b>。<br>
+      <b>10/12 跑 G348 是普通国道，不需要任何通行证</b>，只管出发。
+      来不及就到宜昌市区「<b>三峡大坝旅游区三角地接待站</b>」现场办，5 分钟免费。坝区是军事管理区，无证劝返。</li>
+    <li><b class="tit">订酒店 → 10/12、10/13 各 1 晚（经济型）</b><br>
+      住 <b>沿江大道万达广场</b>一带（首选 <b>全季酒店 · 宜昌万达广场高空江景店（沿江大道 150 号）</b>，约 <b>250–400 元/间</b>），
+      订 <b>2 间双床房</b>（2 男 1 间、2 女 1 间），同一家连住 2 晚不用换房。楼下就是餐厅，去大坝也顺路。<br>
+      <b>10/12、10/13 是周一周二工作日、不是节假日，不提前订也不会没房</b>——但建议今晚顺手订「<b>可免费取消</b>」的，零风险还能锁住价格（现场前台价一般比线上贵几十块，而且"同店 2 间双床连住 2 晚"临时凑不齐要多跑几家）。</li>
+  </ol>
+  <div class="note" style="margin-bottom:0"><b>随身带：</b>4 人身份证原件 · 驾驶证 · 行驶证 · 防滑运动鞋 · 薄外套 · 雨衣或折叠伞（10/14 可能下雨）</div>
+</div>
+
+<!-- ================= Day 1 ================= -->
+<div class="daybox">
+  <div class="dayhead"><span>Day 1 · 10/12 周一　长沙 → 宜昌 + 跑 G348</span><span class="wx">晴到多云 27/19℃</span></div>
+  <div class="daybody">
+    <h3>今天的行程</h3>
+    <ul class="tl">
+      <li><span class="t">06:30</span>长沙出发，导航设「<b>宜昌万达广场</b>」（460 km：长张高速 → 二广高速 → 沪渝高速，中途停 2 次服务区）</li>
+      <li><span class="t">12:30</span>到宜昌市区，先吃午饭；没办成通行证的，去「<b>三峡大坝旅游区三角地接待站</b>」现场补办（5 分钟免费）</li>
+      <li><span class="t">13:30–15:30</span><b>西陵峡快乐谷蹦极</b>（就在三游洞大桥北侧，G348 起点旁）——想跳的跳，不敢跳的站在三游洞大桥上看别人跳，桥下就是下牢溪，风景也好</li>
+      <li><span class="t">15:30–18:30</span><b>跑 G348 三峡公路</b>：三游洞 → 听风谷 → 山外山 → 明月台 → 西陵峡 0.618 服务区 → 干沟子大桥 → 莲沱畔，一路停车看西陵峡</li>
+      <li><span class="t">18:30</span>折返市区，入住伍家岗万达一带酒店（2 间双床房）</li>
+      <li><span class="t">19:30</span><b>晚餐：长江肥鱼火锅</b>（宜昌名片菜，必吃）</li>
+      <li><span class="t">21:00</span>滨江公园 + 夷陵长江大桥夜景散步（免费），顺路逛解放路美食街</li>
+    </ul>
+    <div class="gal">
+      <figure><img src="images/xiling-a.jpg" alt="西陵峡江景"><figcaption>G348 就贴着这样的西陵峡江岸开，一路都是这个景</figcaption></figure>
+      <figure><img src="images/xiling-b.jpg" alt="西陵峡山峦"><figcaption>沿线山峦与江面，9 个观景台随便停</figcaption></figure>
+    </div>
+    <h3>今天要用的信息</h3>
+    <div class="box" style="margin-top:10px;border:2px solid #12a3a8;background:#f2fbfb">
+      <h4>🤸 蹦极：西陵峡快乐谷 · 三峡蹦极（就今天，就这里）</h4>
+      <ul>
+        <li><b>位置：</b>宜昌市夷陵区南津关路 9 号，<b>三游洞大桥北侧</b>，距市区 8 km，山脚下是下牢溪</li>
+        <li><b>高度 61 米</b>——相当于二十多层楼，<b>全国峡谷里最高的蹦极台</b></li>
+        <li><b>价格：</b>蹦极 <b>230 元/人/次</b>（单人跳、双人跳都按人收费）；要视频+照片的 <b>300 元/人</b>；快乐谷入园门票 <b>35 元/人</b>；存包 20 元</li>
+        <li><b>开放 08:30–17:30</b>；<b>现场签保单后才能买票，没有电子票</b>，直接到售票口办</li>
+        <li><b>电话：0717-8862143 / 0717-8862235</b>（<b>出发前务必打这个电话确认当天蹦极项目开不开</b>）</li>
+        <li>跳完发小奖状，有专人拍照——<b>带个 U 盘去拷照片</b>；工作日人少不用排长队，黄金周要排 3 小时</li>
+        <li><b>省时间：</b>一到就直奔售票口<b>签保单买票</b>。单人全程约 <b>20 分钟</b>（体检→签保单→上台→跳→上岸），4 人都跳约 <b>1.5–2 小时</b>；<b>不跳的别买票</b>，走到旁边<b>三游洞大桥上看</b>——免费，桥上就是最佳观赏位，本地人都这么看。手机别带身上（掉水里没人赔），存包 20 元</li>
+        <li><b>不敢跳的也不白来：</b>峡谷秋千（荡幅 68 米、离水面 18 米）、飞天滑索（200 米）、悬崖跷跷板、360 悬崖摆锤；或者在三游洞大桥上看别人跳（免费，本地人常干的事）</li>
+        <li><b>⚠️ 安全：</b>2025 年 8 月这个蹦极台发生过游客坠落受伤事故、景区停业检修，现在已恢复营业。<b>到场先看设备检验合格证和教练资质</b>；恐高、高血压、心脏病、颈椎腰椎有问题的一律别跳。</li>
+      </ul>
+    </div>
+    <div class="two">
+      <div class="box">
+        <h4>🛣 G348 怎么开（4 步）</h4>
+        <ul>
+          <li>导航设「<b>三游洞</b>」或「听风谷观景台」——一到就上了 G348，之后顺着国道开，不用一直导航</li>
+          <li>到 <b>西陵峡 0.618 服务区</b> 后岔路口，<b>向右转进隧道</b> → 干沟子大桥 → 莲沱畔</li>
+          <li>玩完莲沱畔，导航改设「<b>三峡大坝游客换乘中心</b>」（第二天进坝区用）</li>
+          <li>这段<b>全长 39.6 km</b>（从夷陵区港虹路到西陵长江大桥北岸），纯开约 1 小时，<b>边走边玩留 3 小时</b></li>
+          <li><b>别被"G348"这个编号绕晕：</b>G348 国道整条是武汉→云南大理的 2456 km，跟旅游没关系；<b>旅游叫的"G348 三峡公路"就只有这 39.6 km，我们跑完就是全程，不是只跑一小段</b></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h4>🏨 今晚住哪（经济型 · 可直接导航）</h4>
+        <ul>
+          <li><b>首选：全季酒店（宜昌万达广场高空江景店）</b>　导航搜这个名字即可<br>地址：伍家岗区<b>沿江大道 150 号</b>　约 250–400 元/间</li>
+          <li><b>备选 3 家（都在沿江大道/万达一带）：</b><br>丽枫酒店（宜昌万达广场店）· 伍家岗区<b>胜利二路 6-1 号</b><br>格林豪泰（宜昌万达滨江店）· 伍家岗区<b>东山大道 314 号</b><br>雅斯特精选（万达游客中心店）· 伍家岗区<b>沿江大道 142 号</b></li>
+          <li>订 <b>2 间双床房</b>，同一家连住 10/12、10/13 两晚，不用换房</li>
+          <li><b>为什么住这一带：</b>就在长江边（晚上出门就是江景）、楼下整排大排档、离高速口近，去大坝和三峡人家都顺路，<b>三峡游客中心（登船码头）就在沿江大道 142 号对面</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="two">
+      <div class="box">
+        <h4>🍜 今晚吃什么</h4>
+        <ul>
+          <li><b>长江肥鱼火锅</b>（必吃）：鮰鱼白汤锅，肉嫩几乎无刺</li>
+          <li>店选：<b>放翁悬崖餐厅</b>（西陵峡口，G348 起点顺路，人均 100–175）或 <b>自己人·宜昌菜</b>（人均 60–90）</li>
+          <li>小吃：解放路美食街的凉虾、萝卜饺子、炕洋芋</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h4>⚠️ 今天注意</h4>
+        <ul>
+          <li>G348 是盘山沿江国道，<b>弯多、临江侧多为护栏，慢行</b></li>
+          <li><b>只在观景台停车</b>，别在弯道护栏边停车拍照</li>
+          <li>市区工作日早晚高峰 07:30–09:00、17:30–19:00</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= Day 2 ================= -->
+<div class="daybox">
+  <div class="dayhead"><span>Day 2 · 10/13 周二　三峡大坝（重头戏）</span><span class="wx">晴 29/17℃</span></div>
+  <div class="daybody">
+    <h3>今天的行程</h3>
+    <ul class="tl">
+      <li><span class="t">07:00</span>出发，走三峡专用公路直奔坝区（约 50 分钟，通行证已办、车牌自动抬杆，入口有武警站岗）</li>
+      <li><span class="t">08:00</span>到三斗坪「<b>三峡大坝游客换乘中心</b>」，停车 → 换乘景区观光车（35 元/人，往返）</li>
+      <li><span class="t">08:30–12:30</span><b>三峡大坝约 4 小时</b>：<b>坛子岭</b>（制高点，俯瞰大坝全景）→ <b>185 观景平台</b>（与大坝坝顶同高，平视大坝）→ <b>截流纪念园</b>（工程历史）</li>
+      <li><span class="t">12:30</span>午餐（换乘中心附近或返程路上）</li>
+      <li><span class="t">13:00–14:30</span>开车去<b>三峡大瀑布</b>（夷陵区黄花乡，约 1–1.5 h 车程）</li>
+      <li><span class="t">14:30–17:30</span><b>三峡大瀑布（115 元/人，5A，约 3 小时）</b>：核心玩法是<b>穿瀑</b>——从水帘后面走过去，全身会湿，<b>必须带一套换的衣服</b>；雨衣 + 防水鞋套景区有卖（10–20 元）</li>
+      <li><span class="t">18:30</span>晚餐：解放路美食街小吃扫街，或江边鱼馆</li>
+    </ul>
+    <div class="gal">
+      <figure><img src="images/dam-main.jpg" alt="三峡大坝全景"><figcaption>坛子岭看过去就是这个画面——高峡出平湖</figcaption></figure>
+      <figure><img src="images/dam-1.jpg" alt="三峡大坝船闸"><figcaption>大坝船闸与红色门机（坝顶不开放，只能观景台看）</figcaption></figure>
+      <figure><img src="images/waterfall-2.jpg" alt="三峡大瀑布"><figcaption>三峡大瀑布：穿瀑就是从这个水帘后面走过去</figcaption></figure>
+    </div>
+    <h3>今天要用的信息</h3>
+    <div class="two">
+      <div class="box">
+        <h4>🚧 大坝怎么进</h4>
+        <ul>
+          <li>门票免费，但<b>必须实名预约</b>（已办），进园凭身份证原件</li>
+          <li>自驾走<b>三峡专用公路</b>，车牌自动识别抬杆</li>
+          <li>车停<b>三斗坪换乘中心</b>，再换景区观光车进园，<b>35 元/人</b>（必买，私家车进不了核心区）</li>
+          <li>预约时若看到「观光车票 35」「观光车票+电瓶车 45」两个选项：<b>选 35 元的就行</b>。电瓶车只跑坛子岭→185 平台那一小段，<b>步行只要约 10 分钟</b>，沿江步道有遮荫有座椅、风景更好，4 个人还能省 40 元</li>
+          <li>园区很大，穿好走路的鞋；<b>坝顶不开放</b></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h4>🎫 门票钱</h4>
+        <ul>
+          <li>三峡大坝：门票 <b>0 元</b> + 景区观光车 <b>35 元/人（必买）</b>；电瓶车 10 元<b>不用买</b>（步行 10 分钟就到）</li>
+          <li>三峡大瀑布：<b>115 元/人</b>（景区电瓶车往返 20 元可选；雨衣 + 防水鞋套 10–20 元）</li>
+          <li>都可现场买或携程提前买，<b>不用预约</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="warn"><b>大坝注意：</b>安检严格，<b>严禁携带无人机、宠物、易燃易爆、管制刀具</b>；身份证必带；
+      景区信号偶尔弱，<b>把预约码提前截图</b>。选大瀑布记得带<b>雨衣 + 防水鞋套</b>（景区有卖 10–20 元）。</div>
+  </div>
+</div>
+
+<!-- ================= Day 3 ================= -->
+<div class="daybox">
+  <div class="dayhead"><span>Day 3 · 10/14 周三　三峡人家 → 返回长沙</span><span class="wx">多云转阴 22/18℃</span></div>
+  <div class="daybody">
+    <h3>今天的行程</h3>
+    <ul class="tl">
+      <li><span class="t">07:00</span>起床退房出发，07:45 到<b>三峡人家（胡金滩码头）</b>，停车 20 元，凭票乘渡船进景区</li>
+      <li><span class="t">08:00–13:00</span><b>三峡人家约 5 小时</b>：龙进溪、巴王寨、灯影石、土家婚俗表演，门票 <b>180 元/人</b>（含渡船，<b>不用预约，现场窗口买就行</b>；想省排队可在携程提前买）</li>
+      <li><span class="t">13:00</span>码头或景区周边吃午饭</li>
+      <li><span class="t">14:00</span><b>出发返长沙</b>（460 km / 5.5–6.5 h：沪渝高速 → 二广高速 → 长张高速）</li>
+      <li><span class="t">20:00–21:00</span>抵达长沙 🏠（当天到家，不用赶夜路）</li>
+    </ul>
+    <div class="gal">
+      <figure><img src="images/sanxia-1.jpg" alt="三峡人家民俗街"><figcaption>三峡人家 · 巴王寨民俗街</figcaption></figure>
+      <figure><img src="images/sanxia-2.jpg" alt="三峡人家龙进溪"><figcaption>三峡人家 · 龙进溪，景区里最好拍的地方</figcaption></figure>
+    </div>
+    <h3>今天要用的信息</h3>
+    <div class="two">
+      <div class="box">
+        <h4>💡 怎么玩省力</h4>
+        <ul>
+          <li>要<b>爬山 + 乘船</b>，全程约 2 万步，<b>穿防滑运动鞋、带水</b></li>
+          <li>景区内有观光电梯，可以省力</li>
+          <li>表演时间进门先问一下，别错过土家婚俗秀</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h4>🚗 返程提醒</h4>
+        <ul>
+          <li>14:00 出发，<b>16:00 前上高速</b>最稳（避开晚高峰）</li>
+          <li>10/14 可能下雨，<b>带伞、慢行</b>；山路湿滑注意</li>
+          <li>回程会路过葛洲坝，路边就能看到船闸</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ③ 注意事项 ================= -->
+<section>
+  <h2>③ 注意事项（必读）</h2>
+  <h3>🚫 无人机：别带，三峡大坝一带绝对不能飞</h3>
+  <div class="no"><b>结论：这趟别带无人机。</b></div>
+  <ul>
+    <li><b>三峡大坝及坝区禁飞：</b>《长江三峡水利枢纽安全保卫条例》第二十三条明确禁止在空域安全保卫区放无人机、风筝、孔明灯等；景区入园须知写明<b>严禁携带无人机</b>。</li>
+    <li><b>后果：</b>警告、罚款、删除拍摄内容、扣留设备；坝区公安配有反制设备，会信号干扰 + 强制迫降。</li>
+    <li><b>宜昌市区：</b>三峡机场净空保护区、宜昌东站、政府机关、军事管理区、重大水利设施周边，全属管制空域。</li>
+    <li><b>真要飞的唯一合法姿势：</b>在民航局 UOM 平台（uom.caac.gov.cn）实名登记 + 激活，只在 UOM 地图上<b>蓝色"适飞空域"</b>、真高 120 米以下飞。但坝区<b>没有任何合法航拍空间</b>。</li>
+  </ul>
+
+  <h3>🚢 要不要坐游船？（结论：没必要，除非就想体验过船闸）</h3>
+  <ul>
+    <li><b>你们其实已经"看过"西陵峡两次：</b>Day1 在 G348 岸边 9 个观景台俯瞰江面，Day3 三峡人家门票含渡船、又在水上走了一段。</li>
+    <li><b>游船唯一不可替代的是「过葛洲坝船闸」</b>（水涨船高 / 水落船降），其他峡谷风光与前面重复。</li>
+    <li><b>两坝一峡班次：</b>船去车回 <b>08:30 从三峡游客中心</b>（沿江大道 142 号，就在酒店对面）登船；半日游约 <b>168 元</b>，一日游 <b>258 元</b>（含三峡大坝，与你们 Day2 重复）。</li>
+    <li><b>真想加，只有两个位置：</b>① Day2 下午 —— 要砍掉三峡大瀑布；② Day3 下午 —— 三峡人家得压到 12:00 前结束、赶 13:30 下午班，<b>然后 18:00 出发返程，凌晨 0:30–1:00 才到长沙</b>。</li>
+    <li><b>我们的建议：不加。</b>4 个 5A（大坝/人家/大瀑布/G348）+ 蹦极已经满档，三峡人家的渡船也算坐过船了；把体力留给 460 km 的回程更安全。</li>
+  </ul>
+
+  <h3>⚠️ 避坑清单</h3>
+  <ul>
+    <li><b>三峡大坝不预约进不去</b>，现场不保证名额，每日 3.2 万封顶 —— 今晚必须约好 10/13 上午场。</li>
+    <li><b>车辆通行证官方全程免费</b>，路边收费代办、黄牛全是骗子。</li>
+    <li>车到换乘中心后<b>还得换景区观光车</b>，私家车开不进景区内部。</li>
+    <li>三峡大坝<b>坝顶不对游客开放</b>，只有坛子岭、185 平台、截流纪念园三个点。</li>
+    <li>景区停车 10–30 元/次，<b>旺季 8:30 前到</b>车位才宽松。</li>
+    <li><b>现金不用带</b>，微信/支付宝全覆盖；景区信号弱，预约码提前截图。</li>
+    <li>身份证、驾驶证必带；4 人入住酒店都要登记身份证。</li>
+    <li>10 月早晚温差近 10℃，<b>备薄外套</b>；晴天紫外线强，防晒帽带上。</li>
+    <li>山区弯道多、江边早上有雾，<b>慢行</b>，夜间尽量别走盘山路。</li>
+    <li><b>蹦极要挑人：</b>恐高、高血压、心脏病、颈椎腰椎有问题的绝对别跳；要跳就<b>先打 0717-8862143 问当天开不开</b>，到场看设备检验合格证和教练资质，双手双脚怎么扣听教练的。</li>
+  </ul>
+</section>
+
+<!-- ================= ④ 费用 ================= -->
+<section>
+  <h2>④ 费用（4 人 · 一辆车）</h2>
+  <table>
+    <tr><th>项目</th><th>算法</th><th style="width:20%">金额</th></tr>
+    <tr><td>高速过路费</td><td>往返约 920 km</td><td class="num">约 380 元</td></tr>
+    <tr><td>油费</td><td>往返约 920 km</td><td class="num">约 550 元</td></tr>
+    <tr><td>停车费</td><td>景区 + 酒店</td><td class="num">约 100 元</td></tr>
+    <tr><td>住宿</td><td>2 间 × 2 晚 × 约 300 元</td><td class="num">1200 元</td></tr>
+    <tr><td>餐饮</td><td>4 人 × 3 天</td><td class="num">1500 元</td></tr>
+    <tr><td>三峡大坝景区交通车</td><td>35 × 4（门票免费）</td><td class="num">140 元</td></tr>
+    <tr><td>三峡人家门票</td><td>180 × 4（含渡船）</td><td class="num">720 元</td></tr>
+    <tr><td>三峡大瀑布门票</td><td>115 × 4</td><td class="num">460 元</td></tr>
+    <tr class="tot"><td colspan="2">合计（4 人，必花项）</td><td class="num">约 5050 元</td></tr>
+    <tr class="tot"><td colspan="2">人均</td><td class="num">约 1265 元</td></tr>
+    <tr><td>+ 蹦极（若跳）</td><td>230 × 4（不跳不花钱）</td><td class="num">920 元</td></tr>
+    <tr><td>+ 大瀑布电瓶车 / 雨衣鞋套</td><td>可选</td><td class="num">约 100 元</td></tr>
+  </table>
+  <div class="note">三峡大坝<b>门票 0 元</b>，只付 35 元景交车；G348 全程免费。学生、60 岁以上有优待票，带好证件。</div>
+</section>
+
+<!-- ================= ⑤ 电话 ================= -->
+<section>
+  <h2>⑤ 应急电话</h2>
+  <table>
+    <tr><td style="width:45%">三峡大坝票务咨询</td><td class="num">0717-6763498 / 191-7138-1190</td></tr>
+    <tr><td>宜昌旅游咨询与投诉</td><td class="num">0717-12345</td></tr>
+    <tr><td>高速救援 / 交通事故</td><td class="num">12122 / 122</td></tr>
+    <tr><td>报警 / 急救</td><td class="num">110 / 120</td></tr>
+  </table>
+</section>
+
+<footer>
+  🚗💨 「方略肖邦直捣三峡坝」· 长沙⇄宜昌 3天2晚 · 2026/10/12–10/14<br>
+  电脑不关机，全球可看 · 不看不归，看完就回 · 政策与价格以景区当日公告为准
+</footer>
+
+</div>
+</body>
+</html>
